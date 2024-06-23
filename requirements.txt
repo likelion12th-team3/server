@@ -1,0 +1,6 @@
+selenium
+requests
+openai
+python-dotenv
+django
+djangorestframework
