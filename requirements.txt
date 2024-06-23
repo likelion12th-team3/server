@@ -7,4 +7,4 @@ djangorestframework
 django-cors-headers
 gunicorn
 whitenoise
-djnago-environ
+django-environ
