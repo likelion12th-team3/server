@@ -30,21 +30,21 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    "port-0-filmcritique-server-1fgm12klx4lo5a1.sel5.cloudtype.app",
+    "port-0-server-1fgm12klx4lo5a1.sel5.cloudtype.app",
 ]
 
 # CORS 설정
 CORS_ALLOWED_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:8000',
-    "https://port-0-filmcritique-server-1fgm12klx4lo5a1.sel5.cloudtype.app",
+    "https://port-0-server-1fgm12klx4lo5a1.sel5.cloudtype.app",
 ]
 
 # CSRF 설정
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:3000',
     'http://127.0.0.1:8000',
-    "https://port-0-filmcritique-server-1fgm12klx4lo5a1.sel5.cloudtype.app",
+    "https://port-0-server-1fgm12klx4lo5a1.sel5.cloudtype.app",
 ]
 # Application definition
 
