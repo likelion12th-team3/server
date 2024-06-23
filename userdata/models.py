@@ -22,11 +22,22 @@ class Location(models.Model):
 class User(models.Model):
     name = models.CharField(max_length=20, primary_key=True)
     password = models.CharField(max_length=20)
-    category = models.ForeignKey(News, on_delete=models.CASCADE)
-    location = models.ForeignKey(Location, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
     
+class UserCategory(models.Model):
+    user = models.ForeignKey(User,on_delete=models.CASCADE, related_name = 'categoryuser')
+    news = models.ForeignKey(News,on_delete=models.CASCADE, related_name = 'news')
+
+    def __str__(self):
+        return self.user
+
+class UserLocation(models.Model):
+    user = models.ForeignKey(User,on_delete=models.CASCADE, related_name = 'locationuser')
+    location = models.ForeignKey(Location, on_delete=models.CASCADE, related_name = 'location')
+
+    def __str__(self):
+        return self.user
 
     
